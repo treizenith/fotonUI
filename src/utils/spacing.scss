@@ -1,0 +1,49 @@
+$scout: 12;
+
+@mixin generate($count, $name, $sym) {
+  @for $i from 0 through $count {
+    @include sizeify($sizes, "#{$sym}-#{$i}") {
+      #{$name}: ($i / 2) + rem;
+    }
+  };
+};
+
+@mixin generateMultiple($count, $name, $name2, $sym) {
+  @for $i from 0 through $count {
+    @include sizeify($sizes, "#{$sym}-#{$i}") {
+      #{$name}: ($i / 2) + rem;
+      #{$name2}: ($i / 2) + rem;
+    }
+  };
+};
+
+@include generate($scout, margin, m);
+
+@include generate($scout, margin-top, mt);
+@include generate($scout, margin-right, mr);
+@include generate($scout, margin-bottom, mb);
+@include generate($scout, margin-left, ml);
+
+@include generateMultiple($scout, margin-left, margin-right, mx);
+@include generateMultiple($scout, margin-bottom, margin-top, my);
+
+@include generateMultiple($scout, margin-top, margin-right, mtr);
+@include generateMultiple($scout, margin-bottom, margin-right, mbr);
+@include generateMultiple($scout, margin-bottom, margin-left, mbl);
+@include generateMultiple($scout, margin-top, margin-left, mtl);
+
+
+@include generate($scout, padding, p);
+
+@include generate($scout, padding-top, pt);
+@include generate($scout, padding-right, pr);
+@include generate($scout, padding-bottom, pb);
+@include generate($scout, padding-left, pl);
+
+@include generateMultiple($scout, padding-left, padding-right, px);
+@include generateMultiple($scout, padding-bottom, padding-top, py);
+
+@include generateMultiple($scout, padding-top, padding-right, ptr);
+@include generateMultiple($scout, padding-bottom, padding-right, pbr);
+@include generateMultiple($scout, padding-bottom, padding-left, pbl);
+@include generateMultiple($scout, padding-top, padding-left, ptl);

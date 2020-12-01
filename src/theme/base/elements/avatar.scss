@@ -1,0 +1,27 @@
+.panel-guild-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .07s linear;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.panel-icon-btn {
+  font-size: 37px;
+  color: #969393;
+  opacity: .7;
+  transition: all .07s linear;
+
+  &:hover {
+    color: #454444;
+  }
+}

@@ -1,0 +1,58 @@
+.panel-profile-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+
+  & > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  & > .status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #0C0202;
+    border-radius: 50%;
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    cursor: pointer;
+
+    & > .dnd {
+      width: 16px !important;
+      height: 16px !important;
+      background: red;
+      border-radius: 50%;
+      box-shadow: 0px 0px 5px red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        display: flex;
+        width: 10px;
+        height: 2px;
+        background: white;
+      }
+    }
+
+    & > .online {
+      width: 16px !important;
+      height: 16px !important;
+      background: rgb(67, 172, 51);
+      border-radius: 50%;
+      box-shadow: 0px 0px 5px rgb(67, 172, 51);
+    }
+  }
+}
+
+.panel-profile-img-2 {
+	border: 3px solid #fff;
+  border-radius: 15px;
+	box-shadow: inset 0px 0px 10px #f00, 0px 0px 10px #f00;
+}

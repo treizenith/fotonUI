@@ -1,0 +1,26 @@
+.panel-text-area {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & > textarea {
+        color: #fff;
+        width: 100% !important;
+        height: auto;
+        resize: none;
+        background: transparent;
+        border: none;
+        overflow: hidden;
+    }
+
+    & > .mdi {
+        font-size: 26px;
+        cursor: pointer;
+        align-self: flex-end;
+
+        &:hover {
+            color: #aaa;
+        }
+    }
+}

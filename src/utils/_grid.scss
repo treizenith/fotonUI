@@ -1,0 +1,25 @@
+[fui] {
+  > * {
+    max-width: 100%;
+  }
+}
+
+@each $name, $value in $sizes {
+  @media (min-width: $value) {
+    @for $denominator from 1 through $grid-max-columns {
+      @for $numerator from 1 through $denominator {
+        [fui~="#{$name}:col-#{$numerator}-#{$denominator}"] {
+          width: percentage($numerator / $denominator);
+        }
+      }
+    }
+  }
+}
+
+@for $denominator from 1 through $grid-max-columns {
+  @for $numerator from 1 through $denominator {
+    [fui~="col-#{$numerator}-#{$denominator}"] {
+      width: percentage($numerator / $denominator);
+    }
+  }
+}

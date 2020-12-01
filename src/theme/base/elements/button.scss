@@ -1,0 +1,74 @@
+.panel-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  opacity: .5;
+  font-size: 14px;
+  cursor: pointer !important;
+  transition: all .05s linear;
+
+  & > .mdi {
+    font-size: 20px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    padding: auto;
+  }
+}
+
+.panel-btn-active {
+  color: #fff;
+  opacity: 1;
+
+  &::before {
+    content: '';
+    display: flex;
+    position: relative;
+    width: 7px !important;
+    height: 7px !important;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg) translate(-10px, -10px);
+    margin-right: 1rem;
+  }
+}
+
+.panel-profile-btn-1 {
+  border: 2px solid #A1A0B4;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: inset 0px 0px 6px #03002B, 0px 0px 6px #03002B;
+  padding: .6rem 1.75rem;;
+  color: #A2A2A2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .1s linear;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.panel-profile-btn-2 {
+  border: 2px solid #687469;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: inset 0px 0px 6px #000E01, 0px 0px 6px #000E01;
+  padding: .6rem 1.75rem;;
+  color: #A2A2A2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .1s linear;
+
+  &:hover {
+    opacity: .5;
+  }
+}

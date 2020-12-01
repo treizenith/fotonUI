@@ -1,0 +1,207 @@
+@include sizeify($sizes, "flex") {
+  display: flex;
+}
+
+@include sizeify($sizes, "width-100") {
+  width: 100% !important;
+}
+
+@include sizeify($sizes, "width-auto") {
+  width: auto !important;
+}
+
+@include sizeify($sizes, "height-100") {
+  height: 100% !important;
+}
+
+@include sizeify($sizes, "height-auto") {
+  height: auto !important;
+}
+
+@include sizeify($sizes, "w100") {
+  min-width: 100vw;
+}
+
+@include sizeify($sizes, "h100") {
+  min-height: 100vh;
+}
+
+// Overflow rules
+// -------------------------
+@include sizeify($sizes, "overflow-visible") {
+  overflow: visible !important;
+}
+
+@include sizeify($sizes, "overflow-hidden") {
+  overflow: hidden !important;
+}
+
+@include sizeify($sizes, "overflow-auto") {
+  overflow: auto !important;
+}
+
+@include sizeify($sizes, "overflow-y-visible") {
+  overflow-y: visible !important;
+}
+
+@include sizeify($sizes, "overflow-y-hidden") {
+  overflow-y: hidden !important;
+}
+
+@include sizeify($sizes, "overflow-y-auto") {
+  overflow-y: auto !important;
+}
+
+@include sizeify($sizes, "overflow-x-visible") {
+  overflow-x: visible !important;
+}
+
+@include sizeify($sizes, "overflow-x-hidden") {
+  overflow-x: hidden !important;
+}
+
+@include sizeify($sizes, "overflow-x-auto") {
+  overflow-x: auto !important;
+}
+
+// Flex shrink and grow rules
+// -------------------------
+@include sizeify($sizes, "shrink-0") {
+  flex-shrink: 0 !important;
+}
+
+@include sizeify($sizes, "shrink-1") {
+  flex-shrink: 1 !important;
+}
+
+@include sizeify($sizes, "grow-0") {
+  flex-grow: 0 !important;
+}
+
+@include sizeify($sizes, "grow-1") {
+  flex-grow: 1 !important;
+}
+
+// Hidden rule for letsGo (letsgojs.fui-com)
+// -------------------------
+@include sizeify($sizes, "letsGo-hide") {
+  display: none !important;
+}
+
+// Box shadows
+// -------------------------
+@include sizeify($sizes, "shadow-light") {
+  box-shadow: $shadow-light !important;
+}
+
+@include sizeify($sizes, "shadow-dark") {
+  box-shadow: $shadow-dark !important;
+}
+
+// Text align
+// -------------------------
+@include sizeify($sizes, "text-left") {
+  text-align: left !important;
+}
+
+@include sizeify($sizes, "text-center") {
+  text-align: center !important;
+}
+
+@include sizeify($sizes, "text-right") {
+  text-align: right !important;
+}
+
+@include sizeify($sizes, "text-justify") {
+  text-align: justify !important;
+}
+
+@include sizeify($sizes, "text-auto") {
+  text-align: inherit;
+}
+
+// Text transforms
+// -------------------------
+@include sizeify($sizes, "text-uppercase") {
+  text-transform: uppercase !important;
+}
+
+@include sizeify($sizes, "text-lowercase") {
+  text-transform: lowercase !important;
+}
+
+@include sizeify($sizes, "text-capitalize") {
+  text-transform: capitalize !important;
+}
+
+// Text decorations
+// -------------------------
+@include sizeify($sizes, "text-underline") {
+  text-decoration: underline !important;
+}
+
+@include sizeify($sizes, "text-line-through") {
+  text-decoration: line-through !important;
+}
+
+@include sizeify($sizes, "text-italic") {
+  font-style: italic !important;
+}
+
+// Text overflow styles
+// -------------------------
+@include sizeify($sizes, "text-ellipsis") {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+// Opacity styles
+// -------------------------
+@include sizeify($sizes, "opacity-0") {
+  opacity: 0 !important;
+}
+
+@include sizeify($sizes, "opacity-25") {
+  opacity: .25 !important;
+}
+
+@include sizeify($sizes, "opacity-50") {
+  opacity: .5 !important;
+}
+
+@include sizeify($sizes, "opacity-75") {
+  opacity: .75 !important;
+}
+
+@include sizeify($sizes, "opacity-100") {
+  opacity: 1 !important;
+}
+
+// ------------------- //
+// Accessibility rules //
+// ------------------- //
+
+@include sizeify($sizes, "visible-sr") {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@include sizeify($sizes, "visible-sr-focusable") {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

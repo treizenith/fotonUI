@@ -1,0 +1,17 @@
+// $sizes: map-merge($sizes-mobile, $sizes-desktop);
+// $sizes-names: map-keys($sizes);
+@use "sass:map";
+
+@mixin sizeify($sizes_1, $name) {
+  [fui~=#{$name}] {
+    @content;
+  }
+
+  @each $size, $val in $sizes_1 {
+    @media (min-width: $val) {
+      [fui~='#{$size}:#{$name}'] {
+        @content;
+      }
+    }
+  }
+}
